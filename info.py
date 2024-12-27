@@ -35,7 +35,7 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 
 #this vars is for when heroku or koyeb acc get banned, then change this vars as your file to link bot name
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1001995831309'))
-URL = environ.get('URL', '')
+URL = environ.get('URL', 'https://web-7uqtlk7kj6j8.up-de-fra1-k8s-1.apps.run-on-seenode.com/')
 
 # verify system vars
 IS_VERIFY = is_enabled('IS_VERIFY', True)
