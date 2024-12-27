@@ -25,9 +25,9 @@ ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ
 USERNAME = environ.get('USERNAME', 'https://telegram.me/V2_Owner_Bot')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001995831309'))
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001850355982').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://V2Premium:LLdf8Z2nIr48bzTi@v2premium.ryila.mongodb.net/?retryWrites=true&w=majority&appName=V2Premium")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://V2Prime:PeEb6SAwboCfjD9K@mrvirus.ythkz.mongodb.net/?retryWrites=true&w=majority&appName=MrVirus")
 DATABASE_URI2 = environ.get('DATABASE_URI2', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "V2Premium")
+DATABASE_NAME = environ.get('DATABASE_NAME', "MrVirus")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'TgFiles')
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001995831309'))
 QR_CODE = environ.get('QR_CODE', 'https://envs.sh/wam.jpg')
