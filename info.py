@@ -38,7 +38,7 @@ BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1001995831309'))
 URL = environ.get('URL', '')
 
 # verify system vars
-IS_VERIFY = is_enabled('IS_VERIFY', True)
+IS_VERIFY = is_enabled('IS_VERIFY', False)
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1001995831309'))
 TUTORIAL = environ.get("TUTORIAL", "https://youtu.be/0c-i2Lol6LU")
 TUTORIAL2 = environ.get("TUTORIAL2", "https://youtu.be/GdaUbzxDTKs")
@@ -58,7 +58,7 @@ LANGUAGES = ["hindi", "english", "telugu", "tamil", "kannada", "malayalam"]
 
 auth_channel = environ.get('AUTH_CHANNEL', '-1002224811479')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', ''))
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', 't.me/Filter_Bots_Support_Bot'))
 
 # bot settings
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
