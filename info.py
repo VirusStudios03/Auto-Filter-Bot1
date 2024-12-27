@@ -18,23 +18,23 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
+API_ID = int(environ.get('API_ID', '22549633'))
+API_HASH = environ.get('API_HASH', '34d8c9887fe445c1dac2228cbdf9ab48')
 BOT_TOKEN = environ.get('BOT_TOKEN', '')
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-USERNAME = environ.get('USERNAME', 'https://telegram.me/TechifyGuru')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "")
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '2057170163 6835418766 7802198323').split()]
+USERNAME = environ.get('USERNAME', 'https://telegram.me/V2_Owner_Bot')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001995831309'))
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001850355982').split()]
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://V2Premium:LLdf8Z2nIr48bzTi@v2premium.ryila.mongodb.net/?retryWrites=true&w=majority&appName=V2Premium")
 DATABASE_URI2 = environ.get('DATABASE_URI2', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Rahul")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Rahul')
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', ''))
+DATABASE_NAME = environ.get('DATABASE_NAME', "V2Premium")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'TgFiles')
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001995831309'))
 QR_CODE = environ.get('QR_CODE', 'https://envs.sh/wam.jpg')
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
 #this vars is for when heroku or koyeb acc get banned, then change this vars as your file to link bot name
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL', ''))
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1001995831309'))
 URL = environ.get('URL', '')
 
 # verify system vars
@@ -56,7 +56,7 @@ THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "21600"))
 # languages search
 LANGUAGES = ["hindi", "english", "telugu", "tamil", "kannada", "malayalam"]
 
-auth_channel = environ.get('AUTH_CHANNEL', '')
+auth_channel = environ.get('AUTH_CHANNEL', '-1002224811479')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', ''))
 
