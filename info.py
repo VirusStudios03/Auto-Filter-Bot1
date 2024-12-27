@@ -26,7 +26,7 @@ USERNAME = environ.get('USERNAME', 'https://telegram.me/V2_Owner_Bot')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001995831309'))
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001850355982').split()]
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://V2Prime:PeEb6SAwboCfjD9K@mrvirus.ythkz.mongodb.net/?retryWrites=true&w=majority&appName=MrVirus")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://V2Prime1:PeEb6SAwboCfjD9K@mrvirus.ythkz.mongodb.net/?retryWrites=true&w=majority&appName=MrVirus")
 DATABASE_NAME = environ.get('DATABASE_NAME', "MrVirus")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'TgFiles')
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001995831309'))
